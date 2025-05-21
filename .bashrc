@@ -24,6 +24,10 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+# Set editor
+export VISUAL=vi
+export EDITOR=$VISUAL
+
 alias codium="flatpak run com.vscodium.codium --new-window . &> /dev/null"
 alias files="nautilus . &> /dev/null & disown"
 
